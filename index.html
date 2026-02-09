@@ -46,22 +46,32 @@
       max-width: 740px;
       margin: 0 auto;
       padding: 0 24px;
+      border-left: 1px solid var(--rule);
+      border-right: 1px solid var(--rule);
     }
 
     /* ---- Header ---- */
 
     header {
-      padding: 80px 0 0;
+      padding: 0;
     }
 
-    header .org {
+    .hero-img {
+      margin: 0 0 48px;
+    }
+
+    .hero-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-img figcaption {
       font-family: var(--sans);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-size: 0.7rem;
       color: var(--text-secondary);
-      margin-bottom: 28px;
+      margin-top: 10px;
+      letter-spacing: 0.01em;
     }
 
     header h1 {
@@ -69,8 +79,17 @@
       font-size: 2.8rem;
       font-weight: 400;
       line-height: 1.15;
-      letter-spacing: -0.01em;
-      margin-bottom: 20px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    header .org {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
     }
 
     header .subtitle {
@@ -79,7 +98,6 @@
       font-style: italic;
       color: var(--text-secondary);
       line-height: 1.6;
-      max-width: 520px;
     }
 
     /* ---- Sections ---- */
@@ -190,7 +208,7 @@
 
     @media (max-width: 600px) {
       html { font-size: 17px; }
-      header { padding-top: 48px; }
+      header { padding-top: 0; }
       header h1 { font-size: 2.1rem; }
       .rule { margin: 40px 0; }
       .cta {
@@ -207,29 +225,28 @@
   <div class="container">
 
     <header>
-      <p class="org">Open Immanence Society</p>
+      <figure class="hero-img">
+        <img src="Gemini_Generated_Image_eel9aseel9aseel9.png" alt="Families walking together through the arched colonnade of the Annunciation Cathedral campus">
+        <figcaption>The Annunciation Cathedral campus, San&nbsp;Francisco (and yes, Nano Banana added the people into this photo)</figcaption>
+      </figure>
       <h1>Wheelhouse</h1>
+      <p class="org"><em>by the Open Immanence Society</em></p>
       <p class="subtitle">A family coworking space in San&nbsp;Francisco where parents can do meaningful professional work alongside their children as they grow.</p>
     </header>
-
-    <figure class="img-wide" style="margin-top: 56px;">
-      <img src="Gemini_Generated_Image_eel9aseel9aseel9.png" alt="Families walking together through the arched colonnade of the Annunciation Cathedral campus">
-      <figcaption>The Annunciation Cathedral campus, San&nbsp;Francisco</figcaption>
-    </figure>
 
     <hr class="rule">
 
     <section>
       <h2>The Space</h2>
-      <p>Located on the Annunciation Cathedral campus in the heart of San&nbsp;Francisco, Wheelhouse is designed so that families can arrive together each morning and spend their days in a shared rhythm: parents working in quiet offices and call booths while their children play, nap, and learn in dedicated spaces nearby, cared for by on-site nannies, other parents in childcare swaps, or their own mothers and fathers during breaks in the workday.</p>
-      <p>Rather than forcing parents to choose between career and family, Wheelhouse makes both possible in the same place, at the same time, within a community that actively supports both.</p>
+      <p>Located on the Annunciation Cathedral campus in the heart of San&nbsp;Francisco, Wheelhouse is a space designed so that families can arrive together each morning and spend their weekdays in a shared rhythm: parents working in quiet offices and call booths while their children play, nap, and learn in dedicated spaces nearby, cared for by on-site nannies, other parents in childcare swaps, or their own parents during breaks in the workday.</p>
+      <p>Rather than forcing parents to choose between building a meaningful career and building a strong, loving family, Wheelhouse makes both possible in the same place, at the same time, within a community that actively supports both.</p>
     </section>
 
     <hr class="rule">
 
     <section>
       <h2>The Vision</h2>
-      <p>Wheelhouse is more than a practical solution to the childcare problem. It&rsquo;s an experiment in recovering something our fragmented modern lives have largely lost: a shared space where work, family, learning, and community life aren&rsquo;t siloed into separate institutions but woven back together.</p>
+      <p>Wheelhouse is more than a practical solution to the problem of finding reliable childcare for your children. It&rsquo;s an experiment in recovering something our fragmented modern lives have largely lost: a shared space where work, family, learning, and community life aren&rsquo;t split apart, but woven together.</p>
       <p>Inspired by Charles Taylor&rsquo;s diagnosis of the modern condition&mdash;that we live in a &ldquo;secular age&rdquo; marked by a deep hunger for meaning that neither purely religious nor purely secular frameworks have adequately answered&mdash;the Open Immanence Society sees Wheelhouse as a seed of something new. It&rsquo;s a space where parents from different traditions and worldviews can build a common life oriented around what actually matters to them: raising their children well, doing work they believe in, and doing both in the company of others who take those commitments seriously.</p>
     </section>
 
@@ -243,7 +260,7 @@
       <figure class="img-wide" style="margin-top: 32px; margin-bottom: 32px;">
         <img src="Gemini_Generated_Image_fu0lq0fu0lq0fu0l.png" alt="Families sharing a meal together at outdoor tables in the courtyard">
       </figure>
-      <p>San&nbsp;Francisco&rsquo;s tech community, for all its world-shaping ambition, often lacks exactly this kind of rooted, intergenerational, meaning-rich communal life. Wheelhouse is built to fill that gap.</p>
+      <p>San&nbsp;Francisco&rsquo;s tech community, for all its world-shaping ambition, often lacks exactly this kind of rooted, intergenerational, meaning-rich communal life. We&rsquo;re building Wheelhouse to fill that gap.</p>
     </section>
 
     <hr class="rule">
@@ -253,7 +270,7 @@
       <p>We are currently assembling our founding community of families and philanthropic partners, with the goal of opening in early 2026. Our target is 30 member families and a mix of individual professionals&mdash;people working in AI, genomics, education, the nonprofit world, and beyond&mdash;who want their daily working life to be embedded in something deeper than productivity.</p>
 
       <div class="cta">
-        <p>If you&rsquo;re a family in San&nbsp;Francisco who has felt the tension between the work you care about and the life you want to give your children&mdash;or a funder who believes that the tech industry&rsquo;s future should include a richer vision of human flourishing&mdash;we&rsquo;d love to talk.</p>
+        <p>If you&rsquo;re a family in San&nbsp;Francisco who has felt the tension between the work you care about and the life you want to give your children, or a funder who believes that the tech industry&rsquo;s future should include a richer vision of human flourishing, we&rsquo;d love to talk.</p>
         <p>Reach us at <a href="mailto:hello@openimmanence.org">hello@openimmanence.org</a></p>
       </div>
     </section>
